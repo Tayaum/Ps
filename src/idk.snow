@@ -1,0 +1,17 @@
+func add(x, ye)
+    let y = 0
+
+    while ye <= y then
+        let x = x + 1
+        if term::Lines >= y then
+            let y = y + 1
+        end
+        if term::Lines <= y then
+            let y = y - 1
+        end
+        term::write(x, y, x)
+
+    end
+end
+cls()
+add(0, term::Cols)

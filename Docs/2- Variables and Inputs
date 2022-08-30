@@ -1,0 +1,84 @@
+## "let" or "var"? (How to make a Variable)
+for Making a Variable You can use "let" or "var" keyWords like:
+
+<table border="0" cellpadding="1" cellspacing="1" style="background-color:#2c3e50; border-radius:10px; border:2px solid ; outline:none; border: 0px;">
+	<tbody>
+		<tr>
+			<td>
+                <p></p>
+                <p><span style="color: #9b59b6">var </span>variable_name<span style="color:#3498db"> = &quot;variable_data&quot;</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+or
+
+<table border="0" cellpadding="1" cellspacing="1" style="background-color:#2c3e50; border-radius:10px; border:2px solid ; outline:none; border: 0px;">
+	<tbody>
+		<tr>
+			<td>
+                <p></p>
+                <p><span style="color: #9b59b6">let </span>variable_name<span style="color:#3498db"> = &quot;variable_data&quot;</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### We Have Number, String and list For Variable Types
+a Number can be a Float or a Integer(int)
+
+you make a Number like This:
+
+<table border="0" cellpadding="1" cellspacing="1" style="background-color:#2c3e50; border-radius:10px; border:2px solid ; outline:none; border: 0px;">
+	<tbody>
+		<tr>
+			<td>
+                <p></p>
+                <p><span style="color: #9b59b6">let </span>int<span style="color:#3498db"> = </span><span style="color:#9b59b6">10</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="1" cellspacing="1" style="background-color:#2c3e50; border-radius:10px; border:2px solid ; outline:none; border: 0px;">
+	<tbody>
+		<tr>
+			<td>
+                <p></p>
+                <p><span style="color: #9b59b6">let </span>float<span style="color:#3498db"> = </span><span style="color:#9b59b6">10.5</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+you make a String like This:
+
+<table border="0" cellpadding="1" cellspacing="1" style="background-color:#2c3e50; border-radius:10px; border:2px solid ; outline:none; border: 0px;">
+	<tbody>
+		<tr>
+			<td>
+                <p></p>
+                <p><span style="color: #9b59b6">let </span>str<span style="color:#3498db"> = "Hello"</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+## Inputs
+another useful Function is ```"input"``` Function
+
+You can get a Input From User With ```"input"``` Function
+
+it's Same as Python and it's Easy
+
+<table border="0" cellpadding="1" cellspacing="1" style="background-color:#2c3e50; border-radius:10px; border:2px solid ; outline:none; border: 0px;">
+	<tbody>
+		<tr>
+			<td>
+            <p></p>
+			<p><span style="color: #27ae60">input()</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
