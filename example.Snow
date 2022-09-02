@@ -1,5 +1,18 @@
-let i = 0
-while 1 then
-    let i = i + 1
-    print(i)
+  ##############
+ # GOOD       #
+##############
+
+space main()
+    func main()
+        print("Hello World!")
+    end
+    main()
 end
+let main = Planet::main
+main()
+
+  ##############
+ # BAD        #
+##############
+
+print("Hello World!")

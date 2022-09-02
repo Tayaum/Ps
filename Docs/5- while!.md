@@ -9,8 +9,6 @@ while Condition then
 end
 ```
 
-all the Conditions from if works with while
-
 Example:
 ```
 let i = 0
