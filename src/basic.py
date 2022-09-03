@@ -1954,7 +1954,7 @@ class BuiltInFunction(BaseFunction):
         else:
             return RTResult().failure(RTError(
                 self.pos_start, self.pos_end,
-                "Expected Type.Number, Type" + str(type(exec_ctx.symbol_table.get('value')))[13:-2] + ' Found',
+                "Second argument must be number",
                 exec_ctx
             ))
     execute_sleep.arg_names = ['value']
@@ -1975,7 +1975,7 @@ class BuiltInFunction(BaseFunction):
         else:
             return RTResult().failure(RTError(
                 self.pos_start, self.pos_end,
-                "Expected Type.Number, Type" + str(type(exec_ctx.symbol_table.get('value')))[13:-2] + ' Found',
+                "Second argument must be number", 
                 exec_ctx
             ))
     execute_int.arg_names = ['value']
@@ -1985,7 +1985,7 @@ class BuiltInFunction(BaseFunction):
         else:
             return RTResult().failure(RTError(
                 self.pos_start, self.pos_end,
-                "Expected Type.Number, Type" + str(type(exec_ctx.symbol_table.get('value')))[13:-2] + ' Found',
+                "Second argument must be number", 
                 exec_ctx
             ))
     execute_round.arg_names = ['value']
@@ -2003,13 +2003,13 @@ class BuiltInFunction(BaseFunction):
             else:
                 return RTResult().failure(RTError(
                     self.pos_start, self.pos_end,
-                    "Expected Type.Number, Type" + str(type(exec_ctx.symbol_table.get('value')))[13:-2] + ' Found',
+                    "Second argument must be number",
                     exec_ctx
                 ))
         else:
             return RTResult().failure(RTError(
                 self.pos_start, self.pos_end,
-                "Expected Type.Number, Type" + str(type(exec_ctx.symbol_table.get('x')))[13:-2] + ' Found',
+                "Second argument must be number",
                 exec_ctx
             ))
     execute_write.arg_names = ['x', 'y', "text"]
