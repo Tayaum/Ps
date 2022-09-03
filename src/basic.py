@@ -9,6 +9,7 @@ import string
 import os
 import math
 import time
+from sys import platform
 
 #######################################
 # CONSTANTS
@@ -1777,7 +1778,7 @@ class String(Value):
 
     def __repr__(self):
         return f'"{self.value}"'
-String.OS = String(os.name)
+String.OS = String(platform)
 del sys.argv[0]
 String.argv = String(sys.argv)
 class List(Value):
@@ -2171,7 +2172,6 @@ class BuiltInFunction(BaseFunction):
 
         return RTResult().success(Number.Null)
     execute_run.arg_names = ["fn"]
-
 BuiltInFunction.print             = BuiltInFunction("print")
 BuiltInFunction.rand              = BuiltInFunction("rand")
 BuiltInFunction.sleep             = BuiltInFunction("sleep")
@@ -2503,7 +2503,6 @@ global_symbol_table.set("False", Number.false)
 global_symbol_table.set("True", Number.true)
 global_symbol_table.set("math::PI", Number.math_PI)
 global_symbol_table.set("__OS__", String.OS)
-global_symbol_table.set("__name__", String(__name__))
 global_symbol_table.set("term::Cols", Number(os.get_terminal_size().columns))
 global_symbol_table.set("term::Lines", Number(os.get_terminal_size().lines))
 global_symbol_table.set("term::UP", BuiltInFunction.UP)
@@ -2530,7 +2529,7 @@ global_symbol_table.set("pop", BuiltInFunction.pop)
 global_symbol_table.set("extend", BuiltInFunction.extend)
 global_symbol_table.set("len", BuiltInFunction.len)
 global_symbol_table.set("run", BuiltInFunction.run)
-
+exec(open(os.path.dirname(__file__) + '\\.funcs').read(), globals())
 def run(fn, text):
     # Generate tokens
     lexer = Lexer(fn, text)

@@ -1,0 +1,16 @@
+# Example: 
+# def execute_hello_print(self, exec_ctx):
+#     print(f'hello {str(exec_ctx.symbol_table.get("value"))}!!!')
+#    return RTResult().success(Number.Null)
+# execute_hello_print.arg_names = ["value"]
+# BuiltInFunction.execute_hello_print = execute_hello_print
+# BuiltInFunction.hello_print         = BuiltInFunction("hello_print")
+# global_symbol_table.set("hello_print", BuiltInFunction.hello_print)
+# 
+# def execute_mani(self, exec_ctx):
+#     print("mani")
+#     return RTResult().success(Number.Null)
+# execute_mani.arg_names = []
+# BuiltInFunction.execute_mani = execute_mani
+# BuiltInFunction.mani         = BuiltInFunction("mani")
+# global_symbol_table.set("mani", BuiltInFunction.mani)
