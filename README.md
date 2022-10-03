@@ -1,11 +1,9 @@
 # SnowScript(SnSc)
-a Free and Open Source Interpeted Programing 
-Language
 
 ![vscode](https://img.shields.io/badge/vsCode-Open%20in%20vsCode-blue?logo=visualstudiocode&style=for-the-badge&)
 ![vscode](https://img.shields.io/badge/Version-0.0.1-yellow?style=for-the-badge&)
 
-__This is a Fork of _https://github.com/davidcallanan/py-myopl-code___
+__
 ## Running a File
 on Windows:
 ```bash
